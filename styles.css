@@ -305,10 +305,10 @@ nav{
     flex: 0;
 }
 #presentation .intro-text .intro-heading{
-font-size: 3rem;
+font-size: 2rem;
 }
 #presentation .intro-text .intro-para{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.1;
     padding: 0 0 1.5rem 0;
 }
@@ -329,7 +329,7 @@ font-size: 3rem;
     margin-top: 0.25rem;
 }
 #products p{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 #products .product{
@@ -347,7 +347,7 @@ font-size: 3rem;
 #products .product-add{
     display: block;
     margin: auto;
-    width: 80%;
+    width: 100%;
 
 }
 #products .product .juice{
@@ -359,15 +359,15 @@ font-size: 3rem;
 }
 #contact form input{
     display: block;
-    padding:1rem;
+    padding:0.8rem;
     margin: auto;
-    width:70%;
+    width:82%;
     font-size: 1rem;
     text-align: center;
 }
 #contact form button{
-    padding:1rem;
-    width:78.4%;
+    padding:0.8rem;
+    width:90.4%;
     font-size: 1rem;
 }
 footer #copyright p{
