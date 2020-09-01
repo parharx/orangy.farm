@@ -1,0 +1,379 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f6eec9;
+}
+/* Global */
+header,
+#products,
+footer{
+    width: 80%;
+    margin: auto;
+}
+h1,
+h4{
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    font-family: 'Nunito', sans-serif;
+    color: #6e6d6d;
+}
+section{
+    margin-top: 3rem;
+}
+/* Header */
+header{
+    display: flex;
+    align-items: center;
+    border-bottom: #ffa34d 2.5px solid;
+}
+header .logo img{
+    width:20%;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+header nav a{
+    text-decoration: none;
+    color: #2b2b28;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    margin: 20px;
+}
+header nav a:hover{
+    color: #ffa34d;
+}
+
+.logo{
+    flex: 3;
+}
+nav{
+    flex: 1;
+}
+
+/* main */
+/* presentaion */
+#presentation{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    min-height: 90vh;
+    text-align:center;
+}
+#presentation .intro-text .intro-heading{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 5rem;
+    background: url("orangeslice.jpg");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#presentation .intro-text .intro-para{
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    line-height: 1.2;
+    padding: 0 0 1.5rem 0;
+}
+#presentation .cta button{
+    padding: 1rem;
+    background-color: #ffa34d;
+    color: #fafafa;
+    border: none;
+    width: 25%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#presentation .cta button:hover{
+    background-color: #fafafa;
+    color: #ffa34d;
+    border: solid 1.5px #ffa34d;
+}
+
+/* PRODUCTS SECTION */
+
+#products img{
+    width: 90%;
+    height: 50vh;
+    margin: auto;
+}
+#products .product-title{
+    font-size: 2rem;
+    margin-top: 0.25rem;
+}
+#products p{
+    font-size: 1.5rem;
+}
+
+#products .product{
+    display: flex;
+    margin-top: 2rem;
+}
+
+#products .product-btn{
+    display: block;
+    padding: 1rem;
+    background-color: #ffa34d;
+    color: #fafafa;
+    border: 2px #ffa34d solid;
+    width: 50%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+#products .product-btn:hover{
+    background-color: #fafafa;
+    color: #ffa34d;
+    border: #ffa34d 2px solid;
+}
+#products .product-add{
+    display: block;
+    padding: 1rem;
+    background-color: #fafafa;
+    color: #ffa34d;
+    border:  #fafafa 2px solid;
+    width: 50%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#products .product-add:hover{
+    color: #ffa34d;
+    border: #ffa34d 2px solid;
+}
+
+#products .product .juice{
+    width: 100%;
+}
+
+/* CONTACT */
+#contact{
+    background-color: #ffa34d;
+    text-align: center;
+    color: #fafafa;
+    padding: 3rem 0;
+    text-align: center;
+}
+#contact form input{
+    width:35%;
+    padding: 1rem;
+    margin: 0.25rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: none;
+}
+#contact form button{
+    width:20%;
+    margin: 0.25rem;
+    padding: 1rem;
+    background-color: #ffa34d;
+    color: #fafafa;
+    border: solid #fafafa 1px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+#contact form button:hover{
+    background-color: #fafafa;
+    color: #ffa34d;
+}
+
+footer #copyright p{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 0 1rem 0;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width:768px){
+body{
+    text-align: center;
+}
+header,
+#presentation,
+#products .product{
+        flex-direction: column;
+}
+
+header .logo{
+    text-align: center;
+}
+header .logo img{
+    width:50%;
+}
+.logo{
+    flex: 0;
+}
+nav{
+    flex: 0;
+}
+#presentation .intro-text .intro-heading{
+font-size: 3rem;
+}
+#presentation .intro-text .intro-para{
+    font-size: 1.5rem;
+    line-height: 1.1;
+    padding: 0 0 1.5rem 0;
+}
+#presentation .cta button{
+    padding: 1rem;
+    width: 100%;
+    font-size: 1rem;
+}
+/* PRODUCTS */
+#products img{
+    width: 100%;
+    height: 30vh;
+    margin: auto;
+    border: #ffa34d solid 0.5px;
+}
+#products .product-title{
+    font-size: 1.5rem;
+    margin-top: 0.25rem;
+}
+#products p{
+    font-size: 1.1rem;
+}
+
+#products .product{
+    display: flex;
+    margin-top: 2rem;
+}
+
+#products .product-btn{
+    display: block;
+    margin: auto;
+    margin-bottom: 0.5rem;
+}
+
+#products .product-add{
+    display: block;
+    margin: auto;
+
+}
+#products .product .juice{
+    margin-top: 1rem;
+}
+/* CONTACT */
+#contact{
+    padding: 2rem 0;
+}
+#contact form input{
+    display: block;
+    margin: auto;
+    width:70%;
+    font-size: 1rem;
+    text-align: center;
+}
+#contact form button{
+    width:78.4%;
+    font-size: 1rem;
+}
+footer #copyright p{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 0 1rem 0;
+}
+
+}
+
+@media screen and (max-width:480px){
+body{
+    text-align: center;
+}
+header,
+#presentation,
+#products .product{
+        flex-direction: column;
+        align-items: center;
+}
+
+header .logo{
+    text-align: center;
+}
+header .logo img{
+    width:50%;
+}
+.logo{
+    flex: 0;
+}
+nav{
+    flex: 0;
+}
+#presentation .intro-text .intro-heading{
+font-size: 3rem;
+}
+#presentation .intro-text .intro-para{
+    font-size: 1.1rem;
+    line-height: 1.1;
+    padding: 0 0 1.5rem 0;
+}
+#presentation .cta button{
+    padding: 1rem;
+    width: 100%;
+    font-size: 1rem;
+}
+/* PRODUCTS */
+#products img{
+    width: 100%;
+    height: 30vh;
+    margin: auto;
+    border: #ffa34d solid 0.5px;
+}
+#products .product-title{
+    font-size: 1.5rem;
+    margin-top: 0.25rem;
+}
+#products p{
+    font-size: 1.1rem;
+}
+
+#products .product{
+    display: flex;
+    margin-top: 2rem;
+}
+
+#products .product-btn{
+    display: block;
+    margin: auto;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+#products .product-add{
+    display: block;
+    margin: auto;
+    width: 80%;
+
+}
+#products .product .juice{
+    margin-top: 1rem;
+}
+/* CONTACT */
+#contact{
+    padding: 1rem 0;
+}
+#contact form input{
+    display: block;
+    padding:1rem;
+    margin: auto;
+    width:70%;
+    font-size: 1rem;
+    text-align: center;
+}
+#contact form button{
+    padding:1rem;
+    width:78.4%;
+    font-size: 1rem;
+}
+footer #copyright p{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 0 0.5rem 0;
+}
+
+}
