@@ -285,6 +285,13 @@ footer #copyright p{
 body{
     text-align: center;
 }
+section{
+    margin-top: 1rem;
+}
+#presentation{
+    min-height: 75vh;
+}
+            
 header,
 #presentation,
 #products .product{
@@ -334,7 +341,7 @@ font-size: 2rem;
 
 #products .product{
     display: flex;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
 }
 
 #products .product-btn{
