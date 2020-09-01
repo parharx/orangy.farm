@@ -80,7 +80,7 @@ nav{
     padding: 1rem;
     background-color: #ffa34d;
     color: #fafafa;
-    border: none;
+    border: solid 1.5px #ffa34d;
     width: 25%;
     font-family: 'Nunito', sans-serif;
     font-size: 1.2rem;
@@ -193,6 +193,12 @@ footer #copyright p{
 body{
     text-align: center;
 }
+section{
+    margin-top: 1rem;
+}
+#presentation{
+    min-height: 65vh;
+}
 header,
 #presentation,
 #products .product{
@@ -289,7 +295,7 @@ section{
     margin-top: 1rem;
 }
 #presentation{
-    min-height: 75vh;
+    min-height: 60vh;
 }
             
 header,
